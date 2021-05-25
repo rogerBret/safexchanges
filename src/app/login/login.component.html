@@ -1,0 +1,39 @@
+<div class="container">
+    <header class="d-flex flex-wrap flex-wrap  align-items-center justify-content-center justify-content-md-between  py-3 mb-4  border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+       <b style="color: brown;">Safe</b><b style="color: black;">Exchange</b>
+      </a>
+  
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a [routerLink]="['/']"  class="nav-link px-2 link-secondary">Accueil</a></li>
+        <li><a [routerLink]="['/about']" class="nav-link px-2 link-dark">Apropos</a></li>
+        <li><a [routerLink]="['/contact']" class="nav-link px-2 link-dark">Contact</a></li>
+      </ul>
+  
+      <div class="col-md-3 text-end">
+        <a [routerLink]="['/login']" class="btn btn-outline-primary me-2">Connexion</a>
+        <a [routerLink]="['/register']" class="btn btn-primary">Inscription</a>
+      </div>
+    </header>
+  </div>
+  
+<main class="flex-column container container-fluid">
+    <div class="col-md-7 col-lg-8 offset-2">
+        <form>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="w-100 btn btn-primary btn-lg">Submit</button>
+        </form>
+    </div>
+</main>
